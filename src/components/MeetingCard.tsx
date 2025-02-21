@@ -27,7 +27,7 @@ function MeetingCard({ interview }: { interview: Interview }) {
             variant={
               status === "live"
                 ? "default"
-                : status.includes("starting in")
+                : status.includes("Starting in")
                 ? "destructive"
                 : status === "upcoming"
                 ? "secondary"
@@ -36,7 +36,7 @@ function MeetingCard({ interview }: { interview: Interview }) {
           >
             {status === "live"
               ? "Live Now"
-              : status.includes("starting in")
+              : status.includes("Starting in")
               ? status // Shows "starting in X min"
               : status === "upcoming"
               ? "Upcoming"
