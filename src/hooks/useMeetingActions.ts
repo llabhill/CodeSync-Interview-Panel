@@ -24,6 +24,8 @@ function useMeetingActions() {
                 }
             });
             router.push(`/meeting/${call.id}`)
+            await navigator.clipboard.writeText(call.id);
+            toast.success("Meeting Id copied to clipboard", { position: "bottom-center"})
             toast.success("Meeting created")
 
         } 
