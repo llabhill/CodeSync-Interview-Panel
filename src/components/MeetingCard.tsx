@@ -58,7 +58,7 @@ function MeetingCard({ interview }: { interview: Interview }) {
           </Button>
         )}
 
-        {status.includes("starting in") && (
+        {status.includes("Starting in") && (
           <Button variant="outline" className="w-full" disabled>
             {status}
           </Button>
